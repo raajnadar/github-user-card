@@ -5,6 +5,10 @@ body {
 	font-family: bariol, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;
+}
+
 .container {
 	margin: 0px auto;
 	max-width: 90%;
@@ -14,6 +18,12 @@ body {
 	font-size: 3em;
 	padding: 10px 0px;
 	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
 }
 
 .input-element {
@@ -43,4 +53,33 @@ body {
 
 .button-submit:active {
 	background-color: #ff5722;
+}
+
+/* Grid frame */
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-right: -6px;
+	margin-left: -6px;
+}
+
+.col-3 {
+	flex-basis: calc(3/12 * 100%);
+	padding-right: 6px;
+	padding-left: 6px;
+	box-sizing: border-box;
+}
+
+.col-9 {
+	flex-basis: calc(9/12 * 100%);
+	padding-right: 6px;
+	padding-left: 6px;
+	box-sizing: border-box;
+}
+
+/* UI elements */
+.data-title {
+	font-size: 2em;
+	border-bottom: 1px solid #dbdbdb;
 }

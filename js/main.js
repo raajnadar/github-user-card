@@ -28,7 +28,7 @@ document.onreadystatechange = function () {
 							<img class="img-fluid" src="${ data.avatar_url }" />
 						</div>
 						<div class="col-9">
-							<h3 class="title">${ data.name } ${ getLocation(data) }</h3>
+							<h3 class="data-title">${ data.name } ${ getLocation(data) }</h3>
 						</div>
 					</div>
 				`;
