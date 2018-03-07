@@ -1,12 +1,15 @@
 body {
 	margin: 0px;
 	color: #808080;
+	background-color: #eee;
 	user-select: none;
 	font-family: bariol, sans-serif;
+	padding-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0px;
+	font-size: 1.2em;
 }
 
 .container {
@@ -16,9 +19,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .title {
 	font-size: 3em;
-	padding: 10px 0px;
 	border-bottom: 1px solid #dbdbdb;
-	margin-bottom: 20px;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
 }
 
 .img-fluid {
@@ -82,4 +85,29 @@ h1, h2, h3, h4, h5, h6, p {
 .data-title {
 	font-size: 2em;
 	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 6px;
+}
+
+.data-text {
+	font-size: 1.4em;
+	margin-top: 16px;
+}
+
+/* card styling */
+.card {
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,.26);
+	margin-bottom: 10px;
+}
+
+/* Extra */
+.credits {
+	font-size: 1.4em;
+}
+
+.link {
+	color: #5ca5cc;
+	text-decoration: none;
 }

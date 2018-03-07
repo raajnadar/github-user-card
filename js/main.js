@@ -29,6 +29,8 @@ document.onreadystatechange = function () {
 						</div>
 						<div class="col-9">
 							<h3 class="data-title">${ data.name } ${ getLocation(data) }</h3>
+							<p class="data-text">Bio : ${ data.bio }</p>
+							<button class="btn btn-blue" onclick="window.location='${ data.html_url }'>View ${ data.name }'s profile</button>
 						</div>
 					</div>
 				`;

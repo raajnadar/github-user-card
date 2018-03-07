@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>GitHub User Card</title>
-	<link rel="stylesheet" href="./css/style.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>GitHub User Card</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
 
-<body>
+	<body>
 
-	<div class="container">
-		<h1 class="title">GitHub user card (Vanilla JavaScript)</h1>
-
-		<div id="result">
-			<input class="input-element" id="username" type="text" placeholder="Enter the username" />
-			<button id="retrieve" class="button-submit">Get user</button>
+		<div class="container">
+			<div class="card">
+				<h1 class="title">GitHub user card</h1>
+				<p style="margin-bottom: 10px">A project to pull data from GitHub REST API, no library used build with vanilla javascript only.</p>
+				<p>If you liked the project smash that star button on the <a href="https://github.com/raajnadar/github-user-card" target="_blank" class="link">Github Repository</a>.</p>
+			</div>
 		</div>
-	</div>
 
-	<script type="text/javascript" src="./js/main.js"></script>
-</body>
+		<div class="container">
+			<div class="card" id="result">
+				<input class="input-element" id="username" type="text" placeholder="Enter the username" autocomplete="off" />
+				<button id="retrieve" class="button-submit">Get user</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<p class="credits">Designed &amp; developed by <a class="link" href="https://raajnadar.github.io">Rajendran Nadar</a></p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
 
 </html>
