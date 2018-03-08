@@ -58,6 +58,19 @@ h1, h2, h3, h4, h5, h6, p {
 	background-color: #ff5722;
 }
 
+.btn {
+	margin: 14px 0px;
+	padding: 10px 16px;
+	font-size: 1.2em;
+	background-color: #ff7043;
+	color: #fff;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,.26);
+}
+
 /* Grid frame */
 .row {
 	display: flex;
@@ -91,6 +104,15 @@ h1, h2, h3, h4, h5, h6, p {
 .data-text {
 	font-size: 1.4em;
 	margin-top: 16px;
+}
+
+.data-badge {
+	display: inline-block;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #0288D1;
+	color: #fff;
+	margin-right: 10px;
 }
 
 /* card styling */

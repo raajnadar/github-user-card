@@ -1,7 +1,7 @@
 document.onreadystatechange = function () {
 	
 	function getLocation(data) {
-		if (data.location != 'null') {
+		if (data.location != null) {
 			return `lives in ${ data.location }`;
 		} else {
 			return '';
@@ -30,7 +30,15 @@ document.onreadystatechange = function () {
 						<div class="col-9">
 							<h3 class="data-title">${ data.name } ${ getLocation(data) }</h3>
 							<p class="data-text">Bio : ${ data.bio }</p>
-							<button class="btn btn-blue" onclick="window.location='${ data.html_url }'>View ${ data.name }'s profile</button>
+							<p class="data-text">Blog : ${ data.blog }</p>
+							<div style="margin-top: 16px">
+								<div class="data-badge">Repositories ${ data.public_repos }</div>
+								<div class="data-badge">Followers ${ data.followers }</div>
+								<div class="data-badge">Following ${ data.following }</div>
+							</div>
+							<div>
+								<button class="btn" onClick="window.open('${ data.html_url }');">View ${ data.name }'s profile</button>
+							</div>
 						</div>
 					</div>
 				`;
