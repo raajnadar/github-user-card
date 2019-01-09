@@ -12,6 +12,7 @@ document.onreadystatechange = function () {
 	if (document.readyState === 'complete') {
 		var query = document.querySelector('#retrieve');
 		var result = document.querySelector('#result');
+		var searchForm = document.querySelector('#search-form');
 		
 		query.addEventListener('click', function () {
 			// Get username from input box
@@ -22,6 +23,7 @@ document.onreadystatechange = function () {
 			request.open('GET', 'https://api.github.com/users/' + username);
 			request.onload = function () {
 				var data = JSON.parse(request.responseText);
+				searchForm.style.display = "none"
 				result.innerHTML =`
 					<div class="row">
 						<div class="col-3">
@@ -38,10 +40,19 @@ document.onreadystatechange = function () {
 							</div>
 							<div>
 								<button class="btn" onClick="window.open('${ data.html_url }');">View ${ data.name }'s profile</button>
+								<button class="btn btn-blue" id="searchAgain">Search Again</button>
 							</div>
 						</div>
 					</div>
 				`;
+				
+				var searchAgain = document.querySelector('#searchAgain');
+		
+				searchAgain.addEventListener('click', function () {
+					searchForm.style.display = "block"
+
+					result.innerHTML = ''
+				});
 			}
 			request.send();
 		});
