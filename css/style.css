@@ -61,7 +61,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Grid frame */
 .row {
-	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-right: -6px;
@@ -120,4 +119,10 @@ h1, h2, h3, h4, h5, h6, p {
 .link {
 	color: #5ca5cc;
 	text-decoration: none;
+}
+
+@media (min-width: 450px) {
+	.row {
+		display: flex;
+	}
 }
