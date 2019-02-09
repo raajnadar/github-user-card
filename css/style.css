@@ -42,22 +42,6 @@ h1, h2, h3, h4, h5, h6, p {
 	border: 2px solid #5ca5cc;
 }
 
-.button-submit {
-	margin: 14px 0px;
-	padding: 10px 16px;
-	font-size: 1.2em;
-	background-color: #ff7043;
-	color: #fff;
-	border-radius: 8px;
-	cursor: pointer;
-	border: none;
-	outline: none;
-}
-
-.button-submit:active {
-	background-color: #ff5722;
-}
-
 .btn {
 	margin: 14px 0px;
 	padding: 10px 16px;
