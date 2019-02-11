@@ -53,6 +53,7 @@ document.onreadystatechange = function () {
 						searchForm.style.display = "block"
 
 						result.innerHTML = ''
+						document.querySelector('#username').value = ''
 					});
 				}  else {
 					alert('No users found!')
