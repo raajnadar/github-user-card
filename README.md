@@ -12,7 +12,7 @@ This is a web application to search GitHub users using REST API v3.
 Found any bug? It would be great if you raise an issue on GitHub or you can contribute to this repository.
 
 ## Author
-Project Lead - [Rajendran Nadar](https://raajnadar.github.io)
+Project Lead - [Rajendran Nadar](https://raajnadar.in)
 
 ## License
 
